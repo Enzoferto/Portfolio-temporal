@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>survey-form.Anime</title>
+
+  </head>
+  <body>
+    <div class="box">
+    <h1 id="title">Anime Survey Form
+      
+    </h1>
+    <p class="description">A quick survey about anime</p>
+    <form id="survey-form">
+      <div class="personal-info">
+      <div>
+        <label id="name-label">Name <input id="name" class="name" type="text" placeholder="Lionel messi" required>
+      </label>
+      </div>
+       <div>
+      <label id="email-label">Email <input type="email" id="email" class="email" required placeholder="lionelmessi@gmal.com">
+      </label>
+      </div>
+       <div>
+      <label id="number-label">Age <input type="number" id="number"  class="age " min="1" max="120" placeholder="19">
+      </label>
+      </div>
+      </div>
+      <div class="firstquestion">
+        <p >How often do you watch anime in a month ?</p>
+      <label>
+        <select class="dropdown" id="dropdown">
+          <option>Select an option</option>
+          <option>Almost every day</option>
+          <option>Two to four times a week</option>
+          <option>One to two times a week</option>
+          <option>One time a week or less</option>
+       </select>
+      </label>
+      </div> 
+      <div class="animeyears"><p class="secondquestion">What animes is more common for you to watch?</p>
+      <label>
+        <input name="age-of-animes" type="radio" value="Older than twenty"> Older than twenty years
+      </label>
+         <label>
+           <input name="age-of-animes" type="radio" value="Twenty to ten"> Between twentty and ten years old
+      </label>
+      <label>
+        <input name="age-of-animes" type="radio" value="Under ten years"> Under ten years
+      </label>
+       <label>
+         <input name="age-of-animes" type="radio" value="Broadcast"> Those that are broadcast
+      </label>
+      </div>
+      <div class="genders"><p class="fourth-question">What anime gender do you like more?</p>
+      <label class="checkboxmargin"><input type="checkbox" value="Action"> Action</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Comedy"> Comedy</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Horror"> Horror</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Sports"> Sports</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Adventure"> Adventure</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Drama"> Drama</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Mystery"> Mystery</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Supernatural"> Supernatural</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Fantasy"> Fanatasy</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Romance"> Romance</label> 
+      <label class="checkboxmargin"><input type="checkbox" value="Echi"> Echi</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Suspense"> Suspense</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Gourmet"> Gourmet</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Slice of life"> Slice of life</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Girls love"> Girls love</label>
+      <label class="checkboxmargin"><input type="checkbox" value="Boys Love"> Boys love</label>
+      </div>
+      <textarea>
+
+      </textarea>
+      <label><input type="submit" id="submit" class="button-submit">
+    </form>
+    </div>
+    </body>
+</html>

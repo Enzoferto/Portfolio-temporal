@@ -1,0 +1,461 @@
+@import url("https://fonts.cdnfonts.com/css/lifecraft");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+blockquote,
+pre,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	font-family: "LifeCraft", sans-serif;
+	font-size: 1em;
+}
+
+body {
+	background-image: url("https://i.redd.it/0n7txpn02fj61.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.shika {
+	background-color: white;
+}
+
+.shikanokonoko {
+	background: linear-gradient(180deg,
+			rgba(255, 153, 0, 0.7) 0%,
+			rgba(255, 213, 83, 0.7) 25%,
+			rgba(179, 124, 48, 0.7)50%,
+			rgba(150, 64, 0, 0.7) 75%,
+			rgba(74, 0, 0, 0.7) 100%);
+}
+
+
+.titleContainer {
+	height: 15vh;
+	padding-top: 50px;
+}
+
+.title {
+	text-align: center;
+	font-size: 6em;
+	color: black;
+	margin: 0px 0 25px 0;
+}
+
+.descripcion {
+	text-align: center;
+	font-size: 1.7rem;
+}
+
+.img-div {
+	height: 50vh;
+}
+
+.primeraImagen {
+	display: block;
+	max-width: 100%;
+	width: 45%;
+	margin: 40px auto 0 auto;
+	border: #0070DD 5px;
+	border-radius: 10px;
+	border-style: outset;
+	box-shadow: 0px 0px 15px #8C1616;
+}
+
+.pieDeImagen {
+	font-size: 1.2rem;
+	text-align: left;
+	text-indent: 10px;
+}
+
+.tributeInfo {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10vh;
+	z-index: 99;
+}
+
+.logoHorda {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 20%;
+	align-self: flex-start;
+
+}
+
+h2 {
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	font-size: 2.9rem;
+	letter-spacing: 2px;
+	text-shadow: 3px 3px 6px #bd9e00, 6px 6px 10px #ff9900, 10px 10px 14px #005b00;
+}
+
+.logoHorda img {
+	width: 50%;
+	margin-top: 6%;
+	filter: drop-shadow(5px 5px 8px #8C1616);
+
+}
+
+.primeraBox {
+	background: linear-gradient(180deg,
+			rgba(255, 153, 0, 0.6) 0%,
+			rgba(221, 156, 0, 0.6) 25%,
+			rgba(202, 157, 0, 0.6) 50%,
+			rgba(189, 158, 0, 0.6) 75%,
+			rgba(27, 146, 23, 0.6) 100%);
+	height: 1000px;
+	width: 30%;
+	margin-bottom: 100px;
+}
+
+.segundaBox {
+	background: linear-gradient(180deg,
+			rgba(255, 153, 0, 0.6) 0%,
+			rgba(255, 213, 83, 0.6) 24%,
+			rgba(179, 124, 48, 0.6) 50%,
+			rgba(150, 64, 0, 0.6) 76%,
+			rgba(74, 0, 0, 0.6) 100%);
+	height: 1000px;
+	width: 30%;
+	margin-bottom: 100px;
+}
+
+.tributeInfo h3 {
+	font-size: 1.6rem;
+	text-align: justify;
+	letter-spacing: 2px;
+	margin: 2rem 2rem 0.5rem 2rem;
+}
+
+.tributeInfo p {
+	font-size: 1.4rem;
+	text-align: justify;
+	text-indent: 4%;
+	margin: 0rem 2rem 0.5rem 2rem;
+}
+
+.tributeInfo .primeraBox h3 {
+	text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #7a2c00;
+}
+
+.tributeInfo .segundaBox h3 {
+	text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #007600;
+}
+
+/* 1) background-image: linear-gradient(to bottom, #ff9900, #d99d00, #b29e00, #8c9d00, #659900, #4d951b, #32912a, #008c37, #008746, #008152, #007b5a, #007560);*/
+/* 2) background-image: linear-gradient(to bottom, #ff9900, #e17710, #c05815, #9e3b15, #7a2111, #7b2713, #7d2c15, #7e3117, #a35623, #c67d2f, #e5a83f, #ffd553); */
+
+/* pantalla de pobres */
+
+@media (max-width: 1800px) and (min-width: 901px){
+	
+	
+	.logoHorda img {
+		width: 50%;
+		margin-top: 20%;
+		filter: drop-shadow(5px 5px 8px #8C1616);
+	
+	}
+	.primeraBox {
+		background: linear-gradient(180deg,
+				rgba(255, 153, 0, 0.6) 0%,
+				rgba(221, 156, 0, 0.6) 25%,
+				rgba(202, 157, 0, 0.6) 50%,
+				rgba(189, 158, 0, 0.6) 75%,
+				rgba(27, 146, 23, 0.6) 100%);
+		height: fit-content;
+		width: 30%;
+		margin-bottom: 100px;
+	}
+	
+	.segundaBox {
+		background: linear-gradient(180deg,
+				rgba(255, 153, 0, 0.6) 0%,
+				rgba(255, 213, 83, 0.6) 24%,
+				rgba(179, 124, 48, 0.6) 50%,
+				rgba(150, 64, 0, 0.6) 76%,
+				rgba(74, 0, 0, 0.6) 100%);
+		height: fit-content;
+		width: 30%;
+		margin-bottom: 100px;
+	}
+	
+}
+
+/* Movil seccion */
+
+@media(max-width:900px){
+
+	.shika {
+		background-color: white;
+	}
+	
+	.shikanokonoko {
+		background: linear-gradient(180deg,
+				rgba(255, 153, 0, 0.7) 0%,
+				rgba(255, 213, 83, 0.7) 25%,
+				rgba(179, 124, 48, 0.7)50%,
+				rgba(150, 64, 0, 0.7) 75%,
+				rgba(74, 0, 0, 0.7) 100%);
+	}
+	
+	
+	.titleContainer {
+		height: 15vh;
+		padding-top: 50px;
+	}
+	
+	.title {
+		text-align: center;
+		font-size: 6em;
+		color: black;
+		margin: 0px 0 25px 0;
+	}
+	
+	.descripcion {
+		text-align: center;
+		font-size: 1.7rem;
+	}
+	
+	.img-div {
+		height: 50vh;
+	}
+	
+	.primeraImagen {
+		display: block;
+		max-width: 100%;
+		width: 90%;
+		margin: 100px auto 0 auto;
+		border: #0070DD 5px;
+		border-radius: 10px;
+		border-style: outset;
+		box-shadow: 0px 0px 15px #8C1616;
+	}
+	
+	.pieDeImagen {
+		font-size: 1.2rem;
+		text-align: left;
+		text-indent: 10px;
+	}
+	
+	.tributeInfo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		margin-top: 10vh;
+		z-index: 99;
+		align-items: center;
+	}
+	
+	.logoHorda {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		align-self: flex-start;
+		order: 0;
+	
+	}
+	
+	h2 {
+		height: 100px;
+		width: 100%;
+		text-align: center;
+		font-size: 2.5rem;
+		letter-spacing: 2px;
+		text-shadow: 3px 3px 6px #bd9e00, 6px 6px 10px #ff9900, 10px 10px 14px #005b00;
+	}
+	
+	.logoHorda img {
+		width: 50%;
+		margin-top: 6%;
+		margin-bottom: 40px;
+		filter: drop-shadow(5px 5px 8px #8C1616);
+	
+	}
+	
+	.primeraBox {
+		background: linear-gradient(180deg,
+				rgba(255, 153, 0, 0.6) 0%,
+				rgba(221, 156, 0, 0.6) 25%,
+				rgba(202, 157, 0, 0.6) 50%,
+				rgba(189, 158, 0, 0.6) 75%,
+				rgba(27, 146, 23, 0.6) 100%);
+		height: fit-content;
+		width: 90%;
+		margin-bottom: 100px;
+		padding-bottom: 100px;
+		order: 1;
+	}
+	
+	.segundaBox {
+		background: linear-gradient(180deg,
+				rgba(255, 153, 0, 0.6) 0%,
+				rgba(255, 213, 83, 0.6) 24%,
+				rgba(179, 124, 48, 0.6) 50%,
+				rgba(150, 64, 0, 0.6) 76%,
+				rgba(74, 0, 0, 0.6) 100%);
+		height: fit-content;
+		width: 90%;
+		margin-bottom: 20px;
+		padding-bottom: 100px;
+		order: 2;
+	}
+	
+	.tributeInfo h3 {
+		font-size: 1.6rem;
+		text-align: justify;
+		letter-spacing: 2px;
+		margin: 2rem 2rem 0.5rem 2rem;
+	}
+	
+	.tributeInfo p {
+		font-size: 1.4rem;
+		text-align: justify;
+		text-indent: 4%;
+		margin: 0rem 2rem 0.5rem 2rem;
+	}
+	
+	.tributeInfo .primeraBox h3 {
+		text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #7a2c00;
+	}
+	
+	.tributeInfo .segundaBox h3 {
+		text-shadow: 2px 2px 8px #a44f00, 4px 4px 6px #007600;
+	}
+}
+ 
