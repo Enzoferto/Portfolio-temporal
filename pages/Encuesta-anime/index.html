@@ -1,82 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>survey-form.Anime</title>
 
-  </head>
-  <body>
-    <div class="box">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale=1.0>
+  <title>survey-form.Anime</title>
+
+</head>
+
+<body>
+  <div class="box">
     <h1 id="title">Anime Survey Form
-      
+
     </h1>
     <p class="description">A quick survey about anime</p>
     <form id="survey-form">
       <div class="personal-info">
-      <div>
-        <label id="name-label">Name <input id="name" class="name" type="text" placeholder="Lionel messi" required>
-      </label>
+        <div class="labelBox">
+          <label id="name-label" for="name">Name</label><input id="name" class="name" type="text" placeholder="Lionel messi"
+            required>
+        </div>
+        <div class="labelBox">
+          <label id="email-label" for="email">Email </label>
+          <input type="email" id="email" class="email" required placeholder="lionelmessi@gmal.com">
+        </div>
+        <div class="labelBox">
+          <label id="number-label" for="number">Age</label>
+          <input type="number" id="number" class="age " min="1" max="120" placeholder="19">
+        </div>
       </div>
-       <div>
-      <label id="email-label">Email <input type="email" id="email" class="email" required placeholder="lionelmessi@gmal.com">
-      </label>
-      </div>
-       <div>
-      <label id="number-label">Age <input type="number" id="number"  class="age " min="1" max="120" placeholder="19">
-      </label>
-      </div>
-      </div>
+
       <div class="firstquestion">
-        <p >How often do you watch anime in a month ?</p>
-      <label>
-        <select class="dropdown" id="dropdown">
-          <option>Select an option</option>
-          <option>Almost every day</option>
-          <option>Two to four times a week</option>
-          <option>One to two times a week</option>
-          <option>One time a week or less</option>
-       </select>
-      </label>
-      </div> 
-      <div class="animeyears"><p class="secondquestion">What animes is more common for you to watch?</p>
-      <label>
-        <input name="age-of-animes" type="radio" value="Older than twenty"> Older than twenty years
-      </label>
-         <label>
-           <input name="age-of-animes" type="radio" value="Twenty to ten"> Between twentty and ten years old
-      </label>
-      <label>
-        <input name="age-of-animes" type="radio" value="Under ten years"> Under ten years
-      </label>
-       <label>
-         <input name="age-of-animes" type="radio" value="Broadcast"> Those that are broadcast
-      </label>
+        <p>How often do you watch anime in a month ?</p>
+        <label>
+          <select class="dropdown" id="dropdown">
+            <option>Select an option</option>
+            <option>Almost every day</option>
+            <option>Two to four times a week</option>
+            <option>One to two times a week</option>
+            <option>One time a week or less</option>
+          </select>
+        </label>
       </div>
-      <div class="genders"><p class="fourth-question">What anime gender do you like more?</p>
-      <label class="checkboxmargin"><input type="checkbox" value="Action"> Action</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Comedy"> Comedy</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Horror"> Horror</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Sports"> Sports</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Adventure"> Adventure</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Drama"> Drama</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Mystery"> Mystery</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Supernatural"> Supernatural</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Fantasy"> Fanatasy</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Romance"> Romance</label> 
-      <label class="checkboxmargin"><input type="checkbox" value="Echi"> Echi</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Suspense"> Suspense</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Sci-Fi"> Sci-Fi</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Gourmet"> Gourmet</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Slice of life"> Slice of life</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Girls love"> Girls love</label>
-      <label class="checkboxmargin"><input type="checkbox" value="Boys Love"> Boys love</label>
+
+      <div class="animeyears">
+        <p class="secondquestion">What animes is more common for you to watch?</p>
+        <label class="radioContainer"> Older than twenty years
+          <input class="radioButtom" name="age-of-animes" type="radio" value="Older than twenty">
+          <span class="radioCheckmark"></span>
+        </label>
+        <label class="radioContainer"> Between twentty and ten years old
+          <input class="radioButtom" name="age-of-animes" type="radio" value="Twenty to ten">
+          <span class="radioCheckmark"></span>
+        </label>
+        <label class="radioContainer"> Under ten years
+          <input class="radioButtom" name="age-of-animes" type="radio" value="Under ten years">
+          <span class="radioCheckmark"></span>
+        </label>
+        <label class="radioContainer"> Those that are broadcast
+          <input class="radioButtom" name="age-of-animes" type="radio" value="Broadcast">
+          <span class="radioCheckmark"></span>
+        </label>
       </div>
+
+      <div class="genders">
+        <p class="fourth-question">What anime gender do you like more?</p>
+
+
+        <label for="Action" class="checkBoxContainer">Action<input type="checkbox" value="Action" id="Action">
+          <span class="checkmark"></span></label>
+        <label for="Comedy" class="checkBoxContainer">Comedy<input type="checkbox" value="Comedy" id="Comedy">
+          <span class="checkmark"></span></label>
+        <label for="Horror" class="checkBoxContainer">Horror<input type="checkbox" value="Horror" id="Horror">
+          <span class="checkmark"></span></label>
+        <label for="Sports" class="checkBoxContainer">Sports<input type="checkbox" value="Sports" id="Sports">
+          <span class="checkmark"></span></label>
+        <label for="Adventure" class="checkBoxContainer">Adventure<input type="checkbox" value="Adventure"
+            id="Adventure">
+          <span class="checkmark"></span></label>
+        <label for="Drama" class="checkBoxContainer">Drama<input type="checkbox" value="Drama" id="Drama">
+          <span class="checkmark"></span></label>
+        <label for="Mystery" class="checkBoxContainer">Mystery<input type="checkbox" value="Mystery" id="Mystery">
+          <span class="checkmark"></span></label>
+        <label for="Supernatural" class="checkBoxContainer">Supernatural <input type="checkbox" value="Supernatural"
+            id="Supernatural"><span class="checkmark"></span></label>
+        <label for="Fantasy" class="checkBoxContainer">Fantasy<input type="checkbox" value="Fantasy" id="Fantasy">
+          <span class="checkmark"></span></label>
+        <label for="Romance" class="checkBoxContainer">Romance<input type="checkbox" value="Romance" id="Romance">
+          <span class="checkmark"></span></label>
+        <label for="Echi" class="checkBoxContainer">Echi<input type="checkbox" value="Echi" id="Echi"><span
+            class="checkmark"></span></label>
+
+        <label for="Suspense" class="checkBoxContainer">Suspense<input type="checkbox" value="Suspense" id="Suspense">
+          <span class="checkmark"></span></label>
+        <label for="Sci-Fi" class="checkBoxContainer"> Sci-Fi <input type="checkbox" value="Sci-Fi" id="Sci-Fi">
+          <span class="checkmark"></span></label>
+        <label for="Gourmet" class="checkBoxContainer">Gourmet<input type="checkbox" value="Gourmet" id="Gourmet">
+          <span class="checkmark"></span></label>
+        <label for="SliceOfLife" class="checkBoxContainer">Slice of life<input type="checkbox" value="Slice of life"
+            id="SliceOfLife">
+          <span class="checkmark"></span></label>
+        <label for="GirlsLove" class="checkBoxContainer">Girls love<input type="checkbox" value="Girls love"
+            id="GirlsLove"> <span class="checkmark"></span></label>
+        <label for="BoysLove" class="checkBoxContainer">Boys love<input type="checkbox" value="Boys Love" id="BoysLove">
+          <span class="checkmark"></span></label>
+      </div>
+
       <textarea>
 
       </textarea>
       <label><input type="submit" id="submit" class="button-submit">
     </form>
-    </div>
-    </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+
 </html>

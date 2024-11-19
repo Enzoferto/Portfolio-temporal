@@ -1,141 +1,348 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+*{
+  font-family: "Playwrite DE Grund", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+}
 
+:root {
+  --backgroundBody: linear-gradient(to bottom, #bebfeb, #9da0c7, #7d81a3, #5f6481, #424861, #444660, #46455f, #48435d, #6b5a78, #907291, #b78ba9, #dfa5bf);
+  --backgroundBox: linear-gradient(to top, #bebfeb, #c8b8e3, #d2b1d9, #daabcd, #dfa5bf);
+  --color1: rgb(134, 45, 89);
+  --color2: #46455f;
+  --color3: rgb(120, 128, 180);
+}
 
-
-body{
-  background-image: linear-gradient(to bottom, #bebfeb, #9da0c7, #7d81a3, #5f6481, #424861, #444660, #46455f, #48435d, #6b5a78, #907291, #b78ba9, #dfa5bf);;
+body {
+  background-image: var(--backgroundBody);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
 
+.box {
+  background-image: var(--backgroundBox);
+  width: 35%;
+  padding: 0px 35px 60px 35px;
+  border-radius: 50px;
+  margin: 3% 5%;
 }
-.box{
-  background-image: linear-gradient(to top, #bebfeb, #c8b8e3, #d2b1d9, #daabcd, #dfa5bf);
-  width: 650px;
-  padding: 0px 35px 100px 35px;
-  margin: 0px;
-}
-h1{
+
+h1 {
   text-align: center;
   padding: 100px 0 20px 0;
-  text-shadoW: 3px 3px 6px white;;
+  text-shadoW: 3px 3px 6px white;
+  font-size: 1.8rem;
 }
-p{
+
+p {
   text-align: center;
   padding-bottom: 50px;
   text-shadoW: 2px 2px 4px white;
+  font-size: 1.5rem;
 }
-.personal-info{
-  padding: 30px 0 30px 0;
-  display: box;
+
+.personal-info {
+  padding: 50px 0px 100px 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: solid;
-  border-color:	rgba(120, 128, 180,0.5);
+  border-color: rgba(120, 128, 180, 0.5);
   text-shadoW: 2px 2px 4px white;
   border-width: 5px;
-  
+  font-size: 1.4rem;
+  margin: 50px 5% 50px 5%;
+  border-bottom: 4px solid rgba(120, 128, 180, 0.5);
 
 }
-.name, .email,.age{
+
+.name,
+.email,
+.age {
   margin: 8px;
-  border-radius:5px;
-  height:30px;
-  width:400px; 
+  border-radius: 15px;
+  height: 10%;
+  width: 70%;
   border-style: none;
-  font-size:18px;
+  font-size: 18px;
   outline: none;
-  padding: 5px ;
-  border-bottom: 4px solid rgba(120, 128, 180,0.5);
+  padding: 5px;
+  padding-left: 12px;
 }
-.age{
-  margin-left: 31px;
+.personal-info label{
+  width: 100px;
 }
-.email{
-  margin-left: 12px;
+.labelBox{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.firstquestion{
+.firstquestion {
   text-align: center;
-  padding: 0 0 30px 0;
-  margin-top:25px;
+  padding: 50px 0 60px 0;
+  margin-top: 25px;
   border-bottom: solid;
   display: flex;
   flex-direction: column;
-  border-color:	rgba(120, 128, 180,0.5);
-   border-width: 5px;
-   text-shadoW: 2px 2px 4px white;
+  border-color: rgba(120, 128, 180, 0.5);
+  border-width: 5px;
+  text-shadoW: 2px 2px 4px white;
 }
-.dropdown{
+
+.dropdown {
   background-color: rgb(134, 45, 89);
   color: white;
-  width: 400px;
-  height: 30px;
-  border-style:none;
-  outline:none;
-  border-radius: 4px;
-  
-}
-.secondquestion{
-  text-align: center;
-  padding: 25px 0 25px 0;
-  text-shadoW: 2px 2px 4px white;
-}
-
-.animeyears{
-  display: flex;
-  flex-direction: column;
-  border-bottom: solid;
-  border-color:	rgba(120, 128, 180,0.5);
-  padding-bottom: 45px;
-  margin-bottom:15px;
-  border-width: 5px;
-}
-.fourth-question{
-  text-shadoW: 2px 2px 4px white;
-  
-}
-.genders{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 45px;
-  border-bottom: solid;
-  border-color:	rgba(120, 128, 180,0.5);
-  border-width: 5px;
-}
-.checkboxmargin{ 
-  margin: 0 0 6px 0;
-
-}
-textarea{
-  width: 100%;
-  height: 100px;
-  margin-top:25px;
+  width: 90%;
+  height: 50px;
   border-style: none;
   outline: none;
-  background-color:white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.active{
+  border-radius: 25px 25px 0 0;
+}
+
+.secondquestion {
+  text-align: center;
+  padding: 50px 0 60px 0;
+  text-shadoW: 2px 2px 4px white;
+  margin-top: 25px;
+}
+
+.animeyears {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid;
+  border-color: rgba(120, 128, 180, 0.5);
+  padding-bottom: 45px;
+  margin-bottom: 15px;
+  border-width: 5px;
+}
+
+
+/* The container */
+.radioContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: fit-content;
+}
+
+/* Hide the browser's default radio button */
+.radioContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.radioCheckmark {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid var(--color3);
+}
+
+/* On mouse-over, add a grey background color */
+.radioContainer:hover input~.radioCheckmark {
+  background-color: var(--color2);
+}
+
+/* When the radio button is checked, add a blue background */
+.radioContainer input:checked~.radioCheckmark {
+  background-color: var(--color1);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioCheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radioContainer input:checked~.radioCheckmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radioContainer .radioCheckmark:after {
+  top: 7px;
+  left: 7px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.fourth-question {
+  text-shadoW: 2px 2px 4px white;
+  padding: 50px 0 60px 0;
+  margin-top: 25px;
 
 }
-  .button-submit{
-    margin-top:40px;
-    width: 100%;
-    height: 45px;
-    background-color: rgb(134, 45, 89);
-    color: white;
-    border-radius: 10px;
-    border-style: none;
-    padding: 10px;
-    cursor: pointer;
 
-    
-    
+.genders {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 45px;
+  border-bottom: solid;
+  border-color: rgba(120, 128, 180, 0.5);
+  border-width: 5px;
+
+}
+
+.checkBoxContainer {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: fit-content;
+}
+
+.checkBoxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 8px;
+  border: 2px solid var(--color3);
+
+}
+
+.checkBoxContainer:hover input~.checkmark {
+  background-color: var(--color2);
+}
+
+.checkBoxContainer input:checked~.checkmark {
+  background-color: var(--color1);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkBoxContainer input:checked~.checkmark:after {
+  display: block;
+}
+
+.checkBoxContainer .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+textarea {
+  width: 90%;
+  height: 150px;
+  margin: 10% 5% 0 5%;
+  border-style: none;
+  outline: none;
+  background-color: white;
+  border: 4px solid var(--color3);
+  border-radius: 10px;
+
+}
+
+.button-submit {
+  margin-top: 40px;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(134, 45, 89);
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  cursor: pointer;
+
+
+
+}
+
+
+
+/* rgb(223, 159, 191) */
+
+@media (max-width: 900px){
+  .box{
+    width: 92% ;
+
   }
 
-  /* rgb(223, 159, 191) */
+  .personal-info {
+    padding: 30px 0 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid;
+    border-color: rgba(120, 128, 180, 0.5);
+    text-shadoW: 2px 2px 4px white;
+    border-width: 5px;
+    font-size: 1.4rem;
+    margin: 50px 5% 50px;
+    border-bottom: 4px solid rgba(120, 128, 180, 0.5);
+  
+  }
+  
+  .name,
+  .email,
+  .age {
+    display: flex;
+    margin: 8px;
+    border-radius: 15px;
+    height: 10%;
+    width: 70%;
+    border-style: none;
+    font-size: 18px;
+    outline: none;
+    padding: 5px;
+    padding-left: 12px;
+  }
+  
+}
+
+ 
