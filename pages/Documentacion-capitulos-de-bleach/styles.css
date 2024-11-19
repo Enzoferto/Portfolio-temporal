@@ -57,6 +57,10 @@ a {
   background-color: var(--backgroundNavbar);
 }
 
+.nav-link:last-child{
+  margin-bottom: 10vh;
+}
+
 .nav-link:hover {
   color: var(--backgroundMain);
   background: var(--gradientNavbar);
