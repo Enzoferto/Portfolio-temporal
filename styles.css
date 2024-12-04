@@ -1,17 +1,29 @@
+@import url('https://fonts.cdnfonts.com/css/the-left-handed-cursiva');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Romanesco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Great+Vibes&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Romanesco&display=swap');
+/* font-family: "Romanesco", cursive;
+font-family: 'The Left-Handed Cursiva', sans-serif; 
+font-family: "Great Vibes", cursive; */
+
 * {
     font-size: 1em;
     margin: 0;
     padding: 0;
     /* border: 1px solid black; */
     box-sizing: border-box;
+    font-family: "Great Vibes", cursive;
+}
+
+.fontRomanesco {
+    font-family: "Romanesco", cursive;
 }
 
 :root {
     --letrasPrincipales: #C81945;
-    --letrasSecundarias:  #6AB1C0;
+    --letrasSecundarias: #6AB1C0;
     --headerBackground: linear-gradient(130deg, rgba(37, 60, 100, 1) 60%, rgba(243, 224, 211, 1) 75%, rgba(237, 238, 234, 1) 100%);
     --bodyBackground: linear-gradient(130deg, rgba(203, 162, 140, 1) 0%, rgba(243, 224, 211, 1) 15%, rgba(237, 238, 234, 1) 25%, rgba(243, 224, 211, 1) 35%, rgba(216, 182, 163, 1) 50%, rgba(243, 224, 211, 1) 65%, rgba(237, 238, 234, 1) 75%, rgba(243, 224, 211, 1) 85%, rgba(216, 182, 163, 1) 100%);
-    --colorUno: #033E41 ;
+    --colorUno: #033E41;
     --colorDos: #593779;
     --colorTres: #253C64;
     --colorCuatro: #EDEEEA;
@@ -43,7 +55,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
 
 
 }
@@ -60,10 +72,10 @@ header {
 
 .navbar ul li {
     margin: 25px;
-    padding: 12px;
-    border-radius: 15px 0 15px 0;
-    transition: 1s;
-
+    padding: 15px;
+    border-radius: 50px 2px 50px 2px;
+    transition: 700ms;
+    text-shadow: 5px 5px 5px var(--colorSeis);
 
 }
 
@@ -75,12 +87,13 @@ header {
 .navbar ul li:hover {
     background-color: var(--colorCinco);
     transform: scale(1.1);
+    text-shadow: 5px 5px 5px var(--colorCuatro);
 }
 
 .welcomeSection {
     height: fit-content;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 200px 30% 100px 30%;
     color: var(--letrasPrincipales);
 
@@ -88,7 +101,7 @@ header {
 
 .welcomeSection p {
     margin-top: 25px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--letrasSecundarias);
 
 }
@@ -98,32 +111,37 @@ header {
     margin: auto;
     height: 4px;
     border-color: var(--letrasSecundarias);
-    background-color:  var(--letrasSecundarias);
+    background-color: var(--letrasSecundarias);
     border-radius: 25px;
 }
 
 .encabezadoProjects {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
     margin: 100px 30% 50px 30%;
     color: var(--letrasPrincipales);
 }
 
 .encabezadoProjects p {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     color: var(--letrasSecundarias);
     margin-top: 25px;
 }
 
 .projectsBox {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 2.2rem;
     width: 100%;
-    max-width: 1280px;
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 6rem;
 
+}
+
+.projectsBox p {
+    font-family: 'The Left-Handed Cursiva', sans-serif;
+    ;
 }
 
 .project-tile {
@@ -134,7 +152,7 @@ header {
     border-color: var(--colorSeis);
     border-radius: 25px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     transition: 500ms;
     background-color: var(--colorUno);
 
@@ -154,8 +172,8 @@ header {
 }
 
 img {
-    width: 100%;
-    padding: 5px;
+    width: 99%;
+    padding: 1%;
     border-radius: 20px;
 }
 
@@ -166,8 +184,22 @@ footer {
     justify-content: center;
     align-content: center;
     background: linear-gradient(310deg, rgba(200, 25, 69, 1) 60%, rgba(243, 224, 211, 1) 75%, rgba(237, 238, 234, 1) 100%);
+    height: 20vh
 }
-footer img{
+
+footer p {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--colorCuatro);
+    text-shadow: 1px 1px 3px var(--colorUno);
+    text-decoration: underline var(--colorTres);
+    margin: 0 20px 0 0;
+}
+
+footer img {
     width: 50px;
 }
 
@@ -175,9 +207,131 @@ footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     list-style: none;
     text-align: center;
     margin: 20px;
 
+}
+
+footer li {
+    text-decoration: underline var(--colorTres) double 2px;
+    text-shadow: 1px 1px 10px var(--colorCuatro);
+    margin-left: 5px;
+}
+
+footer a {
+    height: 60px;
+    color: var(--colorCuatro);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    transition: 1s;
+    margin: 0 0 0 25px;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    background-color: var(--colorTres);
+    text-shadow: none;
+    box-shadow: 0px 0px 10px var(--colorCuatro);
+    text-decoration: underline var(--letrasPrincipales) double 2px;
+}
+
+
+
+
+/*-------- Mobile Screen ----------*/
+
+
+
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 10px;
+        text-shadow: 5px 5px 5px black;
+
+    }
+
+    .navbar ul li:active {
+        background-color: var(--colorCinco);
+        transform: scale(1.1);
+        text-shadow: 5px 5px 5px var(--colorCuatro);
+    }
+
+    .welcomeSection {
+        font-size: 2.5rem;
+        margin: 200px 10% 100px 10%;
+    }
+
+    .encabezadoProjects {
+        font-size: 2.2rem;
+        margin: 100px 10% 50px 10%;
+    }
+
+    .encabezadoProjects p {
+        font-size: 2rem;
+    }
+
+
+    .projectsBox {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 2.2rem;
+        width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+
+    footer p {
+        font-size: 2.4rem;
+        color: var(--colorCuatro);
+        margin: auto;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    footer ul {
+        font-size: 2rem;
+        margin: auto 5% auto 5%;
+
+    }
+
+    footer li {
+        text-decoration: underline var(--colorTres) double 2px;
+        text-shadow: 1px 1px 10px var(--colorCuatro);
+        margin-left: 5px;
+    }
+
+    footer a {
+        height: 50px;
+    }
+
+    footer a:active {
+        transform: scale(1.05);
+        background-color: var(--colorTres);
+        text-shadow: none;
+        box-shadow: 0px 0px 10px var(--colorCuatro);
+        text-decoration: underline var(--letrasPrincipales) double 2px;
+    }
 }
